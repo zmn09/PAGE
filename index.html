@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Doçuras da Jane — Bolos, Doces, Trufas e Kit Festa</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Fonts: Dancing Script (cursive header) & Inter (clean tables) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            script: ['"Dancing Script"', 'cursive'],
+            sans: ['"Inter"', 'system-ui', '-apple-system', 'sans-serif'],
+          },
+          colors: {
+            pinkBg: '#FCE8F1',
+            pinkSoft: '#F9D3E4',
+            pinkBorder: '#E5487B',
+            crimson: '#C80E42',
+            crimsonDark: '#990830',
+            goldAccent: '#D99B26',
+            choco: '#3E140B',
+          }
+        }
+      }
+    };
+  </script>
+</head>
+<body class="bg-pinkBg text-choco font-sans antialiased">
+
+  <!-- Cabeçalho Principal -->
+  <header class="border-b-2 border-pinkBorder/30 bg-gradient-to-b from-white via-pinkBg to-pinkSoft/70 py-8 px-4 text-center shadow-sm">
+    <div class="mx-auto max-w-4xl">
+      <div class="mx-auto mb-2 inline-flex items-center justify-center rounded-full border-2 border-goldAccent bg-white px-5 py-1 text-xs font-bold uppercase tracking-widest text-crimson shadow-xs">
+        Sabor que encanta • Qualidade que fideliza
+      </div>
+      <h1 class="font-script text-5xl font-bold text-crimson drop-shadow-xs sm:text-6xl">
+        Doçuras da Jane
+      </h1>
+      <p class="mt-1 text-sm font-semibold text-choco/80 sm:text-base">
+        Escolha o tamanho, kit ou doce abaixo para pedir direto no WhatsApp
+      </p>
+
+      <!-- Botões de Contato Direto (WhatsApp e Instagram) -->
+      <div class="mt-4 flex flex-wrap items-center justify-center gap-2.5">
+        <a href="https://wa.me/5582999496405" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 rounded-full bg-emerald-600 px-5 py-2 text-xs font-bold text-white shadow-sm transition hover:bg-emerald-700 sm:text-sm">
+          <span>WhatsApp: (82) 99949-6405</span>
+        </a>
+        <a href="https://www.instagram.com/docuras_da_jane_bolos?fqnt=MW1mNXFpMGFnbnhqMg==" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-purple-600 via-pink-600 to-amber-500 px-5 py-2 text-xs font-bold text-white shadow-sm transition hover:opacity-90 sm:text-sm">
+          <span>Instagram: @docuras_da_jane_bolos</span>
+        </a>
+      </div>
+
+      <!-- Navegação Rápida das Tabelas -->
+      <nav aria-label="Categorias do Cardápio" class="mt-5 flex flex-wrap items-center justify-center gap-2">
+        <a href="#bolos-baixos" class="rounded-full bg-crimson px-4 py-2 text-xs font-bold text-white shadow-xs transition hover:bg-crimsonDark sm:text-sm">
+          Bolos 10 cm
+        </a>
+        <a href="#bolos-altos" class="rounded-full bg-crimson px-4 py-2 text-xs font-bold text-white shadow-xs transition hover:bg-crimsonDark sm:text-sm">
+          Bolos 14 cm
+        </a>
+        <a href="#kit-festa" class="rounded-full bg-crimson px-4 py-2 text-xs font-bold text-white shadow-xs transition hover:bg-crimsonDark sm:text-sm">
+          Kit Festa
+        </a>
+        <a href="#kit-festa-cupcake" class="rounded-full bg-crimson px-4 py-2 text-xs font-bold text-white shadow-xs transition hover:bg-crimsonDark sm:text-sm">
+          Kit Festa c/ Cupcake
+        </a>
+        <a href="#doces-trufas" class="rounded-full bg-crimson px-4 py-2 text-xs font-bold text-white shadow-xs transition hover:bg-crimsonDark sm:text-sm">
+          Doces & Trufas
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="mx-auto max-w-5xl space-y-12 px-4 py-10 sm:px-6">
+
+    <!-- =================================================================== -->
+    <!-- SEÇÃO 1: BOLOS MAIS BAIXOS (10 CENTÍMETROS DE ALTURA)                -->
+    <!-- =================================================================== -->
+    <section id="bolos-baixos" class="rounded-3xl border-2 border-pinkBorder bg-white p-5 shadow-md sm:p-8">
+      <div class="text-center">
+        <span class="inline-block rounded-full border border-goldAccent bg-crimson px-6 py-1.5 font-script text-2xl font-bold text-white sm:text-3xl">
+          Bolos Mais Baixos
+        </span>
+        <div class="mt-2">
+          <span class="inline-block rounded-full border border-goldAccent bg-amber-300 px-5 py-1 text-sm font-extrabold text-choco sm:text-base">
+            10 centímetros de altura
+          </span>
+        </div>
+        <h2 class="mt-2 font-script text-2xl font-bold text-crimson sm:text-3xl">Tabela de Bolos</h2>
+      </div>
+
+      <div class="mt-6 grid grid-cols-1 gap-6 lg:grid-cols-12">
+        <!-- Tabela de Tamanhos, Quantidade e Valor -->
+        <div class="overflow-hidden rounded-2xl border-2 border-pinkBorder/60 bg-pinkBg/40 p-3 sm:p-4 lg:col-span-8">
+          <div class="grid grid-cols-3 gap-2 pb-3 text-center">
+            <div class="rounded-full border border-goldAccent bg-crimson py-1.5 font-script text-lg font-bold text-white sm:text-xl">Tamanhos</div>
+            <div class="rounded-full border border-goldAccent bg-crimson py-1.5 font-script text-lg font-bold text-white sm:text-xl">Quantidade</div>
+            <div class="rounded-full border border-goldAccent bg-crimson py-1.5 font-script text-lg font-bold text-white sm:text-xl">Valor / Pedir</div>
+          </div>
+
+          <div class="space-y-2 text-center text-sm sm:text-base">
+            <a href="https://wa.me/5582999496405?text=Ol%C3%A1%20Jane!%20Gostaria%20de%20encomendar%20um%20Bolo%20Mais%20Baixo%20(10%20cm)%20de%2013%20cm%20(10%20a%2012%20Fatias)%20-%20R%24%2070%2C00." target="_blank" rel="noopener noreferrer" class="grid grid-cols-3 items-center gap-2 rounded-2xl border border-pinkBorder/30 bg-white px-2 py-2.5 shadow-2xs transition hover:border-crimson hover:bg-pinkSoft/40">
+              <span class="font-extrabold text-crimson">13 cm</span>
+              <span class="font-semibold text-choco">10 a 12 Fatias</span>
+              <span class="rounded-full bg-crimson px-2 py-1.5 text-xs font-bold text-white shadow-xs sm:text-sm">R$ 70,00 • Pedir</span>
+            </a>
+            <a href="https://wa.me/5582999496405?text=Ol%C3%A1%20Jane!%20Gostaria%20de%20encomendar%20um%20Bolo%20Mais%20Baixo%20(10%20cm)%20de%2015%20cm%20(15%20a%2016%20Fatias)%20-%20R%24%2085%2C00." target="_blank" rel="noopener noreferrer" class="grid grid-cols-3 items-center gap-2 rounded-2xl border border-pinkBorder/30 bg-white px-2 py-2.5 shadow-2xs transition hover:border-crimson hover:bg-pinkSoft/40">
+              <span class="font-extrabold text-crimson">15 cm</span>
+              <span class="font-semibold text-choco">15 a 16 Fatias</span>
+              <span class="rounded-full bg-crimson px-2 py-1.5 text-xs font-bold text-white shadow-xs sm:text-sm">R$ 85,00 • Pedir</span>
+            </a>
+            <a href="https://wa.me/5582999496405?text=Ol%C3%A1%20Jane!%20Gostaria%20de%20encomendar%20um%20Bolo%20Mais%20Baixo%20(10%20cm)%20de%2018%20cm%20(20%20a%2025%20Fatias)%20-%20R%24%20120%2C00." target="_blank" rel="noopener noreferrer" class="grid grid-cols-3 items-center gap-2 rounded-2xl border border-pinkBorder/30 bg-white px-2 py-2.5 shadow-2xs transition hover:border-crimson hover:bg-pinkSoft/40">
+              <span class="font-extrabold text-crimson">18 cm</span>
+              <span class="font-semibold text-choco">20 a 25 Fatias</span>
+              <span class="rounded-full bg-crimson px-2 py-1.5 text-xs font-bold text-white shadow-xs sm:text-sm">R$ 120,00 • Pedir</span>
+            </a>
+            <a href="https://wa.me/5582999496405?text=Ol%C3%A1%20Jane!%20Gostaria%20de%20encomendar%20um%20Bolo%20Mais%20Baixo%20(10%20cm)%20de%2020%20cm%20(25%20a%2028%20Fatias)%20-%20R%24%20140%2C00." target="_blank" rel="noopener noreferrer" class="grid grid-cols-3 items-center gap-2 rounded-2xl border border-pinkBorder/30 bg-white px-2 py-2.5 shadow-2xs transition hover:border-crimson hover:bg-pinkSoft/40">
+              <span class="font-extrabold text-crimson">20 cm</span>
+              <span class="font-semibold text-choco">25 a 28 Fatias</span>
+              <span class="rounded-full bg-crimson px-2 py-1.5 text-xs font-bold text-white shadow-xs sm:text-sm">R$ 140,00 • Pedir</span>
+            </a>
+            <a href="https://wa.me/5582999496405?text=Ol%C3%A1%20Jane!%20Gostaria%20de%20encomendar%20um%20Bolo%20Mais%20Baixo%20(10%20cm)%20de%2023%20cm%20(30%20a%2035%20Fatias)%20-%20R%24%20180%2C00." target="_blank" rel="noopener noreferrer" class="grid grid-cols-3 items-center gap-2 rounded-2xl border border-pinkBorder/30 bg-white px-2 py-2.5 shadow-2xs transition hover:border-crimson hover:bg-pinkSoft/40">
+              <span class="font-extrabold text-crimson">23 cm</span>
+              <span class="font-semibold text-choco">30 a 35 Fatias</span>
+              <span class="rounded-full bg-crimson px-2 py-1.5 text-xs font-bold text-white shadow-xs sm:text-sm">R$ 180,00 • Pedir</span>
+            </a>
+            <a href="https://wa.me/5582999496405?text=Ol%C3%A1%20Jane!%20Gostaria%20de%20encomendar%20um%20Bolo%20Mais%20Baixo%20(10%20cm)%20de%2025%20cm%20(40%20a%2042%20Fatias)%20-%20R%24%20220%2C00." target="_blank" rel="noopener noreferrer" class="grid grid-cols-3 items-center gap-2 rounded-2xl border border-pinkBorder/30 bg-white px-2 py-2.5 shadow-2xs transition hover:border-crimson hover:bg-pinkSoft/40">
+              <span class="font-extrabold text-crimson">25 cm</span>
+              <span class="font-semibold text-choco">40 a 42 Fatias</span>
+              <span class="rounded-full bg-crimson px-2 py-1.5 text-xs font-bold text-white shadow-xs sm:text-sm">R$ 220,00 • Pedir</span>
+            </a>
+            <a href="https://wa.me/5582999496405?text=Ol%C3%A1%20Jane!%20Gostaria%20de%20encomendar%20um%20Bolo%20Mais%20Baixo%20(10%20cm)%20de%2030%20cm%20(50%20a%2060%20Fatias)%20-%20R%24%20260%2C00." target="_blank" rel="noopener noreferrer" class="grid grid-cols-3 items-center gap-2 rounded-2xl border border-pinkBorder/30 bg-white px-2 py-2.5 shadow-2xs transition hover:border-crimson hover:bg-pinkSoft/40">
+              <span class="font-extrabold text-crimson">30 cm</span>
+              <span class="font-semibold text-choco">50 a 60 Fatias</span>
+              <span class="rounded-full bg-crimson px-2 py-1.5 text-xs font-bold text-white shadow-xs sm:text-sm">R$ 260,00 • Pedir</span>
+            </a>
+            <a href="https://wa.me/5582999496405?text=Ol%C3%A1%20Jane!%20Gostaria%20de%20encomendar%20um%20Bolo%20Mais%20Baixo%20(10%20cm)%20de%2035%20cm%20(75%20a%2080%20Fatias)%20-%20R%24%20320%2C00." target="_blank" rel="noopener noreferrer" class="grid grid-cols-3 items-center gap-2 rounded-2xl border border-pinkBorder/30 bg-white px-2 py-2.5 shadow-2xs transition hover:border-crimson hover:bg-pinkSoft/40">
+              <span class="font-extrabold text-crimson">35 cm</span>
+              <span class="font-semibold text-choco">75 a 80 Fatias</span>
+              <span class="rounded-full bg-crimson px-2 py-1.5 text-xs font-bold text-white shadow-xs sm:text-sm">R$ 320,00 • Pedir</span>
+            </a>
+          </div>
+          <p class="mt-3 text-center text-xs font-semibold text-crimson">Clique na opção desejada para abrir o pedido no WhatsApp</p>
+        </div>
+
+        <!-- Informações & Pagamento -->
+        <div class="flex flex-col justify-between gap-4 lg:col-span-4">
+          <div class="rounded-2xl border-2 border-pinkBorder/60 bg-pinkBg/40 p-5">
+            <h3 class="rounded-full bg-crimson py-1 text-center font-script text-2xl font-bold text-white">Informações</h3>
+            <ul class="mt-4 space-y-3 text-sm font-semibold text-choco">
+              <li class="flex items-start gap-2">
+                <span class="text-crimson">♥</span>
+                <span>Não incluso Topper personalizados.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-crimson">♥</span>
+                <span>Nem flores nem glitter.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-crimson">♥</span>
+                <span>Bolos com duas camadas de recheio.</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="rounded-2xl border-2 border-pinkBorder/60 bg-pinkBg/40 p-5">
+            <h3 class="rounded-full bg-crimson py-1 text-center font-script text-2xl font-bold text-white">Pagamento</h3>
+            <ul class="mt-4 space-y-2.5 text-sm font-semibold text-choco">
+              <li class="flex items-start gap-2">
+                <span class="text-crimson">•</span>
+                <span>À vista ou parcelamos no cartão de crédito.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-crimson">•</span>
+                <span>Aceitamos Pix.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================== -->
+    <!-- SEÇÃO 2: BOLOS MAIS ALTOS (14 CENTÍMETROS DE ALTURA)                 -->
+    <!-- =================================================================== -->
+    <section id="bolos-altos" class="rounded-3xl border-2 border-pinkBorder bg-white p-5 shadow-md sm:p-8">
+      <div class="text-center">
+        <span class="inline-block rounded-full border border-goldAccent bg-crimson px-6 py-1.5 font-script text-2xl font-bold text-white sm:text-3xl">
+          Bolos Mais Altos
+        </span>
+        <div class="mt-2">
+          <span class="inline-block rounded-full border border-goldAccent bg-amber-300 px-5 py-1 text-sm font-extrabold text-choco sm:text-base">
+            14 centímetros de altura
+          </span>
+        </div>
+        <h2 class="mt-2 font-script text-2xl font-bold text-crimson sm:text-3xl">Tabela de Bolos</h2>
+      </div>
+
+      <div class="mt-6 grid grid-cols-1 gap-6 lg:grid-cols-12">
+        <!-- Tabela de Tamanhos, Quantidade e Valor -->
+        <div class="overflow-hidden rounded-2xl border-2 border-pinkBorder/60 bg-pinkBg/40 p-3 sm:p-4 lg:col-span-8">
+          <div class="grid grid-cols-3 gap-2 pb-3 text-center">
+            <div class="rounded-full border border-goldAccent bg-crimson py-1.5 font-script text-lg font-bold text-white sm:text-xl">Tamanhos</div>
+            <div class="rounded-full border border-goldAccent bg-crimson py-1.5 font-script text-lg font-bold text-white sm:text-xl">Quantidade</div>
+            <div class="rounded-full border border-goldAccent bg-crimson py-1.5 font-script text-lg font-bold text-white sm:text-xl">Valor / Pedir</div>
+          </div>
+
+          <div class="space-y-2 text-center text-sm sm:text-base">
+            <a href="https://wa.me/5582999496405?text=Ol%C3%A1%20Jane!%20Gostaria%20de%20encomendar%20um%20Bolo%20Mais%20Alto%20(14%20cm)%20de%2013%20cm%20(10%20a%2013%20Fatias)%20-%20R%24%2080%2C00." target="_blank" rel="noopener noreferrer" class="grid grid-cols-3 items-center gap-2 rounded-2xl border border-pinkBorder/30 bg-white px-2 py-2.5 shadow-2xs transition hover:border-crimson hover:bg-pinkSoft/40">
+              <span class="font-extrabold text-crimson">13 cm</span>
+              <span class="font-semibold text-choco">10 a 13 Fatias</span>
+              <span class="rounded-full bg-crimson px-2 py-1.5 text-xs font-bold text-white shadow-xs sm:text-sm">R$ 80,00 • Pedir</span>
+            </a>
+            <a href="https://wa.me/5582999496405?text=Ol%C3%A1%20Jane!%20Gostaria%20de%20encomendar%20um%20Bolo%20Mais%20Alto%20(14%20cm)%20de%2015%20cm%20(15%20a%2017%20Fatias)%20-%20R%24%20100%2C00." target="_blank" rel="noopener noreferrer" class="grid grid-cols-3 items-center gap-2 rounded-2xl border border-pinkBorder/30 bg-white px-2 py-2.5 shadow-2xs transition hover:border-crimson hover:bg-pinkSoft/40">
+              <span class="font-extrabold text-crimson">15 cm</span>
+              <span class="font-semibold text-choco">15 a 17 Fatias</span>
+              <span class="rounded-full bg-crimson px-2 py-1.5 text-xs font-bold text-white shadow-xs sm:text-sm">R$ 100,00 • Pedir</span>
+            </a>
+            <a href="https://wa.me/5582999496405?text=Ol%C3%A1%20Jane!%20Gostaria%20de%20encomendar%20um%20Bolo%20Mais%20Alto%20(14%20cm)%20de%2018%20cm%20(24%20a%2028%20Fatias)%20-%20R%24%20140%2C00." target="_blank" rel="noopener noreferrer" class="grid grid-cols-3 items-center gap-2 rounded-2xl border border-pinkBorder/30 bg-white px-2 py-2.5 shadow-2xs transition hover:border-crimson hover:bg-pinkSoft/40">
+              <span class="font-extrabold text-crimson">18 cm</span>
+              <span class="font-semibold text-choco">24 a 28 Fatias</span>
+              <span class="rounded-full bg-crimson px-2 py-1.5 text-xs font-bold text-white shadow-xs sm:text-sm">R$ 140,00 • Pedir</span>
+            </a>
+            <a href="https://wa.me/5582999496405?text=Ol%C3%A1%20Jane!%20Gostaria%20de%20encomendar%20um%20Bolo%20Mais%20Alto%20(14%20cm)%20de%2020%20cm%20(26%20a%2030%20Fatias)%20-%20R%24%20160%2C00." target="_blank" rel="noopener noreferrer" class="grid grid-cols-3 items-center gap-2 rounded-2xl border border-pinkBorder/30 bg-white px-2 py-2.5 shadow-2xs transition hover:border-crimson hover:bg-pinkSoft/40">
+              <span class="font-extrabold text-crimson">20 cm</span>
+              <span class="font-semibold text-choco">26 a 30 Fatias</span>
+              <span class="rounded-full bg-crimson px-2 py-1.5 text-xs font-bold text-white shadow-xs sm:text-sm">R$ 160,00 • Pedir</span>
+            </a>
+            <a href="https://wa.me/5582999496405?text=Ol%C3%A1%20Jane!%20Gostaria%20de%20encomendar%20um%20Bolo%20Mais%20Alto%20(14%20cm)%20de%2023%20cm%20(34%20a%2038%20Fatias)%20-%20R%24%20200%2C00." target="_blank" rel="noopener noreferrer" class="grid grid-cols-3 items-center gap-2 rounded-2xl border border-pinkBorder/30 bg-white px-2 py-2.5 shadow-2xs transition hover:border-crimson hover:bg-pinkSoft/40">
+              <span class="font-extrabold text-crimson">23 cm</span>
+              <span class="font-semibold text-choco">34 a 38 Fatias</span>
+              <span class="rounded-full bg-crimson px-2 py-1.5 text-xs font-bold text-white shadow-xs sm:text-sm">R$ 200,00 • Pedir</span>
+            </a>
+            <a href="https://wa.me/5582999496405?text=Ol%C3%A1%20Jane!%20Gostaria%20de%20encomendar%20um%20Bolo%20Mais%20Alto%20(14%20cm)%20de%2025%20cm%20(45%20a%2050%20Fatias)%20-%20R%24%20250%2C00." target="_blank" rel="noopener noreferrer" class="grid grid-cols-3 items-center gap-2 rounded-2xl border border-pinkBorder/30 bg-white px-2 py-2.5 shadow-2xs transition hover:border-crimson hover:bg-pinkSoft/40">
+              <span class="font-extrabold text-crimson">25 cm</span>
+              <span class="font-semibold text-choco">45 a 50 Fatias</span>
+              <span class="rounded-full bg-crimson px-2 py-1.5 text-xs font-bold text-white shadow-xs sm:text-sm">R$ 250,00 • Pedir</span>
+            </a>
+            <a href="https://wa.me/5582999496405?text=Ol%C3%A1%20Jane!%20Gostaria%20de%20encomendar%20um%20Bolo%20Mais%20Alto%20(14%20cm)%20de%2030%20cm%20(58%20a%2065%20Fatias)%20-%20R%24%20280%2C00." target="_blank" rel="noopener noreferrer" class="grid grid-cols-3 items-center gap-2 rounded-2xl border border-pinkBorder/30 bg-white px-2 py-2.5 shadow-2xs transition hover:border-crimson hover:bg-pinkSoft/40">
+              <span class="font-extrabold text-crimson">30 cm</span>
+              <span class="font-semibold text-choco">58 a 65 Fatias</span>
+              <span class="rounded-full bg-crimson px-2 py-1.5 text-xs font-bold text-white shadow-xs sm:text-sm">R$ 280,00 • Pedir</span>
+            </a>
+            <a href="https://wa.me/5582999496405?text=Ol%C3%A1%20Jane!%20Gostaria%20de%20encomendar%20um%20Bolo%20Mais%20Alto%20(14%20cm)%20de%2035%20cm%20(80%20a%2085%20Fatias)%20-%20R%24%20350%2C00." target="_blank" rel="noopener noreferrer" class="grid grid-cols-3 items-center gap-2 rounded-2xl border border-pinkBorder/30 bg-white px-2 py-2.5 shadow-2xs transition hover:border-crimson hover:bg-pinkSoft/40">
+              <span class="font-extrabold text-crimson">35 cm</span>
+              <span class="font-semibold text-choco">80 a 85 Fatias</span>
+              <span class="rounded-full bg-crimson px-2 py-1.5 text-xs font-bold text-white shadow-xs sm:text-sm">R$ 350,00 • Pedir</span>
+            </a>
+          </div>
+          <p class="mt-3 text-center text-xs font-semibold text-crimson">Clique na opção desejada para abrir o pedido no WhatsApp</p>
+        </div>
+
+        <!-- Informações & Pagamento -->
+        <div class="flex flex-col justify-between gap-4 lg:col-span-4">
+          <div class="rounded-2xl border-2 border-pinkBorder/60 bg-pinkBg/40 p-5">
+            <h3 class="rounded-full bg-crimson py-1 text-center font-script text-2xl font-bold text-white">Informações</h3>
+            <ul class="mt-4 space-y-3 text-sm font-semibold text-choco">
+              <li class="flex items-start gap-2">
+                <span class="text-crimson">♥</span>
+                <span>Não incluso Topper personalizados.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-crimson">♥</span>
+                <span>Nem flores nem glitter.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-crimson">♥</span>
+                <span>Bolos com três camadas de recheio.</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="rounded-2xl border-2 border-pinkBorder/60 bg-pinkBg/40 p-5">
+            <h3 class="rounded-full bg-crimson py-1 text-center font-script text-2xl font-bold text-white">Pagamento</h3>
+            <ul class="mt-4 space-y-2.5 text-sm font-semibold text-choco">
+              <li class="flex items-start gap-2">
+                <span class="text-crimson">•</span>
+                <span>À vista ou parcelamos no cartão de crédito.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-crimson">•</span>
+                <span>Aceitamos Pix.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================== -->
+    <!-- SEÇÃO 3: KIT FESTA                                                  -->
+    <!-- =================================================================== -->
+    <section id="kit-festa" class="rounded-3xl border-2 border-pinkBorder bg-white p-5 shadow-md sm:p-8">
+      <div class="text-center">
+        <span class="inline-block rounded-full border-2 border-goldAccent bg-crimson px-8 py-1.5 font-script text-3xl font-bold text-white sm:text-4xl">
+          Kit Festa
+        </span>
+      </div>
+
+      <div class="mt-6 grid grid-cols-1 gap-6 lg:grid-cols-12">
+        <!-- Tabela de Kits -->
+        <div class="overflow-hidden rounded-2xl border-2 border-pinkBorder/60 bg-pinkBg/40 p-3 sm:p-4 lg:col-span-8">
+          <div class="grid grid-cols-3 gap-2 pb-3 text-center">
+            <div class="rounded-full border border-goldAccent bg-crimson py-1.5 font-script text-lg font-bold text-white sm:text-xl">Kits</div>
+            <div class="rounded-full border border-goldAccent bg-crimson py-1.5 font-script text-lg font-bold text-white sm:text-xl">Descrição</div>
+            <div class="rounded-full border border-goldAccent bg-crimson py-1.5 font-script text-lg font-bold text-white sm:text-xl">Valor / Pedir</div>
+          </div>
+
+          <div class="space-y-2.5 text-center text-sm sm:text-base">
+            <a href="https://wa.me/5582999496405?text=Ol%C3%A1%20Jane!%20Gostaria%20de%20encomendar%20o%20Kit%201%20(1%20bolo%2013%20cm%2C%2025%20doces%2C%2035%20salgados)%20-%20R%24%20110%2C00." target="_blank" rel="noopener noreferrer" class="grid grid-cols-3 items-center gap-2 rounded-2xl border border-pinkBorder/30 bg-white px-2 py-3 shadow-2xs transition hover:border-crimson hover:bg-pinkSoft/40">
+              <span class="rounded-full bg-crimson py-1.5 font-script text-xl font-bold text-white">Kit 1</span>
+              <div class="font-bold leading-tight text-choco">
+                <div>1 bolo de 13 cm</div>
+                <div class="text-crimson">25 doces</div>
+                <div class="text-crimson">35 salgados</div>
+              </div>
+              <span class="rounded-full bg-crimson px-2 py-1.5 text-xs font-extrabold text-white shadow-xs sm:text-sm">R$ 110,00 • Pedir</span>
+            </a>
+
+            <a href="https://wa.me/5582999496405?text=Ol%C3%A1%20Jane!%20Gostaria%20de%20encomendar%20o%20Kit%202%20(1%20bolo%2015%20cm%2C%2030%20doces%2C%2050%20salgados)%20-%20R%24%20140%2C00." target="_blank" rel="noopener noreferrer" class="grid grid-cols-3 items-center gap-2 rounded-2xl border border-pinkBorder/30 bg-white px-2 py-3 shadow-2xs transition hover:border-crimson hover:bg-pinkSoft/40">
+              <span class="rounded-full bg-crimson py-1.5 font-script text-xl font-bold text-white">Kit 2</span>
+              <div class="font-bold leading-tight text-choco">
+                <div>1 bolo de 15 cm</div>
+                <div>30 doces</div>
+                <div>50 salgados</div>
+              </div>
+              <span class="rounded-full bg-crimson px-2 py-1.5 text-xs font-extrabold text-white shadow-xs sm:text-sm">R$ 140,00 • Pedir</span>
+            </a>
+
+            <a href="https://wa.me/5582999496405?text=Ol%C3%A1%20Jane!%20Gostaria%20de%20encomendar%20o%20Kit%203%20(1%20bolo%2018%20cm%2C%2050%20doces%2C%2060%20salgados)%20-%20R%24%20195%2C00." target="_blank" rel="noopener noreferrer" class="grid grid-cols-3 items-center gap-2 rounded-2xl border border-pinkBorder/30 bg-white px-2 py-3 shadow-2xs transition hover:border-crimson hover:bg-pinkSoft/40">
+              <span class="rounded-full bg-crimson py-1.5 font-script text-xl font-bold text-white">Kit 3</span>
+              <div class="font-bold leading-tight text-choco">
+                <div>1 bolo de 18 cm</div>
+                <div>50 doces</div>
+                <div>60 salgados</div>
+              </div>
+              <span class="rounded-full bg-crimson px-2 py-1.5 text-xs font-extrabold text-white shadow-xs sm:text-sm">R$ 195,00 • Pedir</span>
+            </a>
+
+            <a href="https://wa.me/5582999496405?text=Ol%C3%A1%20Jane!%20Gostaria%20de%20encomendar%20o%20Kit%204%20(1%20bolo%2020%20cm%2C%2050%20doces%2C%20100%20salgados)%20-%20R%24%20240%2C00." target="_blank" rel="noopener noreferrer" class="grid grid-cols-3 items-center gap-2 rounded-2xl border border-pinkBorder/30 bg-white px-2 py-3 shadow-2xs transition hover:border-crimson hover:bg-pinkSoft/40">
+              <span class="rounded-full bg-crimson py-1.5 font-script text-xl font-bold text-white">Kit 4</span>
+              <div class="font-bold leading-tight text-choco">
+                <div>1 bolo de 20 cm</div>
+                <div>50 doces</div>
+                <div>100 salgados</div>
+              </div>
+              <span class="rounded-full bg-crimson px-2 py-1.5 text-xs font-extrabold text-white shadow-xs sm:text-sm">R$ 240,00 • Pedir</span>
+            </a>
+
+            <a href="https://wa.me/5582999496405?text=Ol%C3%A1%20Jane!%20Gostaria%20de%20encomendar%20o%20Kit%205%20(1%20bolo%2023%20cm%2C%20100%20docinhos%2C%20100%20salgados)%20-%20R%24%20320%2C00." target="_blank" rel="noopener noreferrer" class="grid grid-cols-3 items-center gap-2 rounded-2xl border border-pinkBorder/30 bg-white px-2 py-3 shadow-2xs transition hover:border-crimson hover:bg-pinkSoft/40">
+              <span class="rounded-full bg-crimson py-1.5 font-script text-xl font-bold text-white">Kit 5</span>
+              <div class="font-bold leading-tight text-choco">
+                <div>1 bolo de 23 cm</div>
+                <div>100 docinhos</div>
+                <div>100 salgados</div>
+              </div>
+              <span class="rounded-full bg-crimson px-2 py-1.5 text-xs font-extrabold text-white shadow-xs sm:text-sm">R$ 320,00 • Pedir</span>
+            </a>
+          </div>
+          <p class="mt-3 text-center text-xs font-semibold text-crimson">Clique no Kit desejado para abrir o pedido no WhatsApp</p>
+        </div>
+
+        <!-- Informações & Forma de Pagamento do Kit Festa -->
+        <div class="flex flex-col justify-between gap-4 lg:col-span-4">
+          <div class="rounded-2xl border-2 border-pinkBorder/60 bg-pinkBg/40 p-5">
+            <h3 class="rounded-full bg-crimson py-1 text-center font-script text-2xl font-bold text-white">Informações</h3>
+            <ul class="mt-4 space-y-2.5 text-sm font-semibold text-choco">
+              <li class="flex items-start gap-2">
+                <span class="text-crimson">♥</span>
+                <span>Esses valores são com bolos de 10 cm de altura e duas camadas de recheio.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-crimson">♥</span>
+                <span>Topper simples.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-crimson">♥</span>
+                <span>Doces com 10 gramas.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-crimson">♥</span>
+                <span>Salgados de 16 gramas.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-crimson">♥</span>
+                <span>Se o Topper for personalizado em 3D fica por conta do cliente.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-crimson">♥</span>
+                <span>Glitter são cobrados adicional.</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="rounded-2xl border-2 border-pinkBorder/60 bg-pinkBg/40 p-5">
+            <h3 class="rounded-full bg-crimson py-1 text-center font-script text-2xl font-bold text-white">Forma de Pagamento</h3>
+            <ul class="mt-4 space-y-2.5 text-sm font-semibold text-choco">
+              <li class="flex items-start gap-2">
+                <span class="text-crimson">•</span>
+                <span>À vista.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-crimson">•</span>
+                <span>50% e o restante no ato da entrega.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================== -->
+    <!-- SEÇÃO 3B: KIT FESTA COM CUPCAKE                                     -->
+    <!-- =================================================================== -->
+    <section id="kit-festa-cupcake" class="rounded-3xl border-2 border-pinkBorder bg-white p-5 shadow-md sm:p-8">
+      <div class="text-center">
+        <span class="inline-block rounded-full border-2 border-goldAccent bg-crimson px-8 py-1.5 font-script text-3xl font-bold text-white sm:text-4xl">
+          Kit Festa (Com Cupcake)
+        </span>
+      </div>
+
+      <div class="mt-6 grid grid-cols-1 gap-6 lg:grid-cols-12">
+        <!-- Tabela de Kits com Cupcake -->
+        <div class="overflow-hidden rounded-2xl border-2 border-pinkBorder/60 bg-pinkBg/40 p-3 sm:p-4 lg:col-span-8">
+          <div class="grid grid-cols-3 gap-2 pb-3 text-center">
+            <div class="rounded-full border border-goldAccent bg-crimson py-1.5 font-script text-lg font-bold text-white sm:text-xl">Kits</div>
+            <div class="rounded-full border border-goldAccent bg-crimson py-1.5 font-script text-lg font-bold text-white sm:text-xl">Descrição</div>
+            <div class="rounded-full border border-goldAccent bg-crimson py-1.5 font-script text-lg font-bold text-white sm:text-xl">Valor / Pedir</div>
+          </div>
+
+          <div class="space-y-2.5 text-center text-sm sm:text-base">
+            <a href="https://wa.me/5582999496405?text=Ol%C3%A1%20Jane!%20Gostaria%20de%20encomendar%20o%20Kit%201%20com%20Cupcake%20(1%20bolo%2013%20cm%2C%2020%20doces%2C%2030%20salgados%2C%205%20cupcake)%20-%20R%24%20110%2C00." target="_blank" rel="noopener noreferrer" class="grid grid-cols-3 items-center gap-2 rounded-2xl border border-pinkBorder/30 bg-white px-2 py-3 shadow-2xs transition hover:border-crimson hover:bg-pinkSoft/40">
+              <span class="rounded-full bg-crimson py-1.5 font-script text-xl font-bold text-white">Kit 1</span>
+              <div class="font-bold leading-tight text-choco">
+                <div>1 bolo de 13 cm</div>
+                <div>20 doces</div>
+                <div>30 salgados</div>
+                <div class="text-crimson">5 cupcake</div>
+              </div>
+              <span class="rounded-full bg-crimson px-2 py-1.5 text-xs font-extrabold text-white shadow-xs sm:text-sm">R$ 110,00 • Pedir</span>
+            </a>
+
+            <a href="https://wa.me/5582999496405?text=Ol%C3%A1%20Jane!%20Gostaria%20de%20encomendar%20o%20Kit%202%20com%20Cupcake%20(1%20bolo%2015%20cm%2C%2030%20doces%2C%2050%20salgados%2C%206%20cupcake)%20-%20R%24%20145%2C00." target="_blank" rel="noopener noreferrer" class="grid grid-cols-3 items-center gap-2 rounded-2xl border border-pinkBorder/30 bg-white px-2 py-3 shadow-2xs transition hover:border-crimson hover:bg-pinkSoft/40">
+              <span class="rounded-full bg-crimson py-1.5 font-script text-xl font-bold text-white">Kit 2</span>
+              <div class="font-bold leading-tight text-choco">
+                <div>1 bolo de 15 cm</div>
+                <div>30 doces</div>
+                <div>50 salgados</div>
+                <div class="text-crimson">6 cupcake</div>
+              </div>
+              <span class="rounded-full bg-crimson px-2 py-1.5 text-xs font-extrabold text-white shadow-xs sm:text-sm">R$ 145,00 • Pedir</span>
+            </a>
+
+            <a href="https://wa.me/5582999496405?text=Ol%C3%A1%20Jane!%20Gostaria%20de%20encomendar%20o%20Kit%203%20com%20Cupcake%20(1%20bolo%2018%20cm%2C%2040%20doces%2C%2050%20salgados%2C%206%20cupcake)%20-%20R%24%20185%2C00." target="_blank" rel="noopener noreferrer" class="grid grid-cols-3 items-center gap-2 rounded-2xl border border-pinkBorder/30 bg-white px-2 py-3 shadow-2xs transition hover:border-crimson hover:bg-pinkSoft/40">
+              <span class="rounded-full bg-crimson py-1.5 font-script text-xl font-bold text-white">Kit 3</span>
+              <div class="font-bold leading-tight text-choco">
+                <div>1 bolo de 18 cm</div>
+                <div>40 doces</div>
+                <div>50 salgados</div>
+                <div class="text-crimson">6 cupcake</div>
+              </div>
+              <span class="rounded-full bg-crimson px-2 py-1.5 text-xs font-extrabold text-white shadow-xs sm:text-sm">R$ 185,00 • Pedir</span>
+            </a>
+
+            <a href="https://wa.me/5582999496405?text=Ol%C3%A1%20Jane!%20Gostaria%20de%20encomendar%20o%20Kit%204%20com%20Cupcake%20(1%20bolo%2020%20cm%2C%2050%20doces%2C%2060%20salgados%2C%208%20cupcake)%20-%20R%24%20220%2C00." target="_blank" rel="noopener noreferrer" class="grid grid-cols-3 items-center gap-2 rounded-2xl border border-pinkBorder/30 bg-white px-2 py-3 shadow-2xs transition hover:border-crimson hover:bg-pinkSoft/40">
+              <span class="rounded-full bg-crimson py-1.5 font-script text-xl font-bold text-white">Kit 4</span>
+              <div class="font-bold leading-tight text-choco">
+                <div>1 bolo de 20 cm</div>
+                <div>50 doces</div>
+                <div>60 salgados</div>
+                <div class="text-crimson">8 cupcake</div>
+              </div>
+              <span class="rounded-full bg-crimson px-2 py-1.5 text-xs font-extrabold text-white shadow-xs sm:text-sm">R$ 220,00 • Pedir</span>
+            </a>
+
+            <a href="https://wa.me/5582999496405?text=Ol%C3%A1%20Jane!%20Gostaria%20de%20encomendar%20o%20Kit%20Festa%20com%20Cupcake%20(1%20bolo%2023%20cm%2C%2070%20doces%2C%20100%20salgados%2C%2010%20cupcake)%20-%20R%24%20320%2C00." target="_blank" rel="noopener noreferrer" class="grid grid-cols-3 items-center gap-2 rounded-2xl border border-pinkBorder/30 bg-white px-2 py-3 shadow-2xs transition hover:border-crimson hover:bg-pinkSoft/40">
+              <span class="rounded-full bg-crimson py-1.5 font-script text-lg leading-none font-bold text-white sm:text-xl">Kit Festa</span>
+              <div class="font-bold leading-tight text-choco">
+                <div>1 bolo de 23 cm</div>
+                <div>70 doces</div>
+                <div>100 salgados</div>
+                <div class="text-crimson">10 cupcake</div>
+              </div>
+              <span class="rounded-full bg-crimson px-2 py-1.5 text-xs font-extrabold text-white shadow-xs sm:text-sm">R$ 320,00 • Pedir</span>
+            </a>
+          </div>
+          <p class="mt-3 text-center text-xs font-semibold text-crimson">Clique no Kit desejado para abrir o pedido no WhatsApp</p>
+        </div>
+
+        <!-- Informações & Forma de Pagamento do Kit Festa com Cupcake -->
+        <div class="flex flex-col justify-between gap-4 lg:col-span-4">
+          <div class="rounded-2xl border-2 border-pinkBorder/60 bg-pinkBg/40 p-5">
+            <h3 class="rounded-full bg-crimson py-1 text-center font-script text-2xl font-bold text-white">Informações</h3>
+            <ul class="mt-4 space-y-2.5 text-sm font-semibold text-choco">
+              <li class="flex items-start gap-2">
+                <span class="text-crimson">♥</span>
+                <span>Esses valores são com bolos de 10 cm de altura e duas camadas de recheio.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-crimson">♥</span>
+                <span>Topper simples.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-crimson">♥</span>
+                <span>Doces com 10 gramas.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-crimson">♥</span>
+                <span>Salgados de 16 gramas.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-crimson">♥</span>
+                <span>Se o Topper for personalizado em 3D fica por conta do cliente.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-crimson">♥</span>
+                <span>Glitter são cobrados adicional.</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="rounded-2xl border-2 border-pinkBorder/60 bg-pinkBg/40 p-5">
+            <h3 class="rounded-full bg-crimson py-1 text-center font-script text-2xl font-bold text-white">Forma de Pagamento</h3>
+            <ul class="mt-4 space-y-2.5 text-sm font-semibold text-choco">
+              <li class="flex items-start gap-2">
+                <span class="text-crimson">•</span>
+                <span>À vista.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-crimson">•</span>
+                <span>50% e o restante no ato da entrega.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================== -->
+    <!-- SEÇÃO 4: DOCES E TRUFAS                                             -->
+    <!-- =================================================================== -->
+    <section id="doces-trufas" class="rounded-3xl border-2 border-pinkBorder bg-white p-5 shadow-md sm:p-8">
+      <div class="text-center">
+        <span class="inline-block rounded-full border-2 border-goldAccent bg-crimson px-8 py-1.5 font-script text-3xl font-bold text-white sm:text-4xl">
+          Doces & Trufas
+        </span>
+      </div>
+
+      <!-- Lista de Doces -->
+      <div class="mt-6 space-y-4">
+        <!-- Doces 10 gramas -->
+        <a href="https://wa.me/5582999496405?text=Ol%C3%A1%20Jane!%20Gostaria%20de%20encomendar%20o%20cento%20de%20Doces%2010%20Gramas%20-%20R%24%20100%2C00." target="_blank" rel="noopener noreferrer" class="flex flex-col items-center justify-between gap-4 rounded-2xl border-2 border-pinkBorder/60 bg-pinkBg/40 p-4 transition hover:border-crimson hover:bg-pinkSoft/60 sm:flex-row sm:px-6">
+          <div class="text-center sm:text-left">
+            <h3 class="text-xl font-extrabold uppercase text-choco">Doces</h3>
+            <p class="text-lg font-extrabold uppercase text-crimson">10 Gramas</p>
+          </div>
+          <div class="w-full rounded-2xl border border-pinkBorder bg-white px-6 py-3 text-center sm:w-auto sm:min-w-[220px]">
+            <span class="inline-block rounded-full bg-crimson px-3 py-0.5 text-[11px] font-bold uppercase tracking-wider text-white">
+              O Cento • Pedir
+            </span>
+            <p class="mt-1 text-2xl font-extrabold text-crimson">R$ 100,00</p>
+          </div>
+        </a>
+
+        <!-- Doces 15 gramas -->
+        <a href="https://wa.me/5582999496405?text=Ol%C3%A1%20Jane!%20Gostaria%20de%20encomendar%20o%20cento%20de%20Doces%2015%20Gramas%20-%20R%24%20140%2C00." target="_blank" rel="noopener noreferrer" class="flex flex-col items-center justify-between gap-4 rounded-2xl border-2 border-pinkBorder/60 bg-pinkBg/40 p-4 transition hover:border-crimson hover:bg-pinkSoft/60 sm:flex-row sm:px-6">
+          <div class="text-center sm:text-left">
+            <h3 class="text-xl font-extrabold uppercase text-choco">Doces</h3>
+            <p class="text-lg font-extrabold uppercase text-crimson">15 Gramas</p>
+          </div>
+          <div class="w-full rounded-2xl border border-pinkBorder bg-white px-6 py-3 text-center sm:w-auto sm:min-w-[220px]">
+            <span class="inline-block rounded-full bg-crimson px-3 py-0.5 text-[11px] font-bold uppercase tracking-wider text-white">
+              O Cento • Pedir
+            </span>
+            <p class="mt-1 text-2xl font-extrabold text-crimson">R$ 140,00</p>
+          </div>
+        </a>
+
+        <!-- Surpresa de Uva / Brigadeiro de Ninho com Nutella -->
+        <a href="https://wa.me/5582999496405?text=Ol%C3%A1%20Jane!%20Gostaria%20de%20encomendar%20Surpresa%20de%20Uva%20%2F%20Brigadeiro%20de%20Ninho%20com%20Nutella%20(15%20Gramas)%20-%20R%24%201%2C60%20a%20unidade." target="_blank" rel="noopener noreferrer" class="flex flex-col items-center justify-between gap-4 rounded-2xl border-2 border-pinkBorder/60 bg-pinkBg/40 p-4 transition hover:border-crimson hover:bg-pinkSoft/60 sm:flex-row sm:px-6">
+          <div class="text-center sm:text-left">
+            <h3 class="text-xl font-extrabold uppercase text-choco">Surpresa de Uva</h3>
+            <p class="font-script text-2xl font-bold text-crimson">Brigadeiro de Ninho com Nutella</p>
+            <span class="mt-1 inline-block rounded-full bg-crimson px-4 py-0.5 text-xs font-bold uppercase text-white">
+              15 Gramas
+            </span>
+          </div>
+          <div class="w-full rounded-2xl border border-pinkBorder bg-white px-6 py-3 text-center sm:w-auto sm:min-w-[220px]">
+            <span class="inline-block rounded-full bg-crimson px-3 py-0.5 text-[11px] font-bold uppercase tracking-wider text-white">
+              Unidade • Pedir
+            </span>
+            <p class="mt-1 text-2xl font-extrabold text-crimson">R$ 1,60</p>
+          </div>
+        </a>
+      </div>
+
+      <!-- Trufas: Tradicional vs Personalizada -->
+      <div class="mt-6 grid grid-cols-1 gap-4 md:grid-cols-2">
+        <!-- Trufa Tradicional -->
+        <a href="https://wa.me/5582999496405?text=Ol%C3%A1%20Jane!%20Gostaria%20de%20encomendar%20o%20cento%20de%20Trufa%20Tradicional%20(Simples)%20-%20R%24%20180%2C00." target="_blank" rel="noopener noreferrer" class="block rounded-2xl border-2 border-pinkBorder/60 bg-pinkBg/40 p-5 text-center transition hover:border-crimson hover:bg-pinkSoft/60">
+          <div class="rounded-full border border-goldAccent bg-crimson py-1.5 text-base font-bold text-white">
+            Trufa Tradicional
+          </div>
+          <p class="mt-4 text-lg font-extrabold text-choco">Trufa Simples</p>
+          <div class="mx-auto mt-3 max-w-xs rounded-2xl border border-pinkBorder bg-white px-6 py-3">
+            <span class="inline-block rounded-full bg-crimson px-3 py-0.5 text-[11px] font-bold uppercase tracking-wider text-white">
+              O Cento • Pedir
+            </span>
+            <p class="mt-1 text-2xl font-extrabold text-crimson">R$ 180,00</p>
+          </div>
+        </a>
+
+        <!-- Trufa Personalizada -->
+        <a href="https://wa.me/5582999496405?text=Ol%C3%A1%20Jane!%20Gostaria%20de%20encomendar%20Trufa%20Personalizada%20-%20R%24%202%2C00%20a%20unidade." target="_blank" rel="noopener noreferrer" class="block rounded-2xl border-2 border-pinkBorder/60 bg-pinkBg/40 p-5 text-center transition hover:border-crimson hover:bg-pinkSoft/60">
+          <div class="rounded-full border border-goldAccent bg-crimson py-1.5 text-base font-bold text-white">
+            Trufa Personalizada
+          </div>
+          <p class="mt-4 text-lg font-extrabold text-choco">Trufa Personalizada</p>
+          <div class="mx-auto mt-3 max-w-xs rounded-2xl border border-pinkBorder bg-white px-6 py-3">
+            <span class="inline-block rounded-full bg-crimson px-3 py-0.5 text-[11px] font-bold uppercase tracking-wider text-white">
+              Unidade • Pedir
+            </span>
+            <p class="mt-1 text-2xl font-extrabold text-crimson">R$ 2,00</p>
+          </div>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Rodapé com a frase oficial das artes -->
+  <footer class="border-t-2 border-pinkBorder/30 bg-crimson py-8 px-4 text-center text-white">
+    <div class="mx-auto max-w-3xl">
+      <p class="text-base font-semibold sm:text-lg">
+        ♥ Feitos com <span class="font-extrabold text-amber-300">amor</span> e ingredientes de qualidade para deixar seus momentos ainda mais doces! ♥
+      </p>
+      <p class="mt-2 text-xs font-bold uppercase tracking-widest text-pinkSoft">
+        Sabor que encanta • Qualidade que fideliza
+      </p>
+      <p class="mt-5 text-sm font-bold text-amber-200 sm:text-base">
+        Para mais informações, entre em contato:
+      </p>
+      <div class="mt-3 flex flex-wrap items-center justify-center gap-3">
+        <a href="https://wa.me/5582999496405" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 rounded-full bg-emerald-600 px-6 py-2.5 text-sm font-bold text-white shadow-sm transition hover:bg-emerald-700">
+          <span>WhatsApp: (82) 99949-6405</span>
+        </a>
+        <a href="https://www.instagram.com/docuras_da_jane_bolos?fqnt=MW1mNXFpMGFnbnhqMg==" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-purple-600 via-pink-600 to-amber-500 px-6 py-2.5 text-sm font-bold text-white shadow-sm transition hover:opacity-90">
+          <span>Instagram: @docuras_da_jane_bolos</span>
+        </a>
+      </div>
+
+      <!-- Links Legais e Acessibilidade -->
+      <nav aria-label="Informações Legais e Acessibilidade" class="mt-6 flex flex-wrap items-center justify-center gap-x-4 gap-y-2 border-t border-white/20 pt-4 text-xs text-pinkSoft">
+        <button type="button" onclick="openInfoModal('privacidade')" class="underline-offset-2 transition hover:text-white hover:underline focus:outline-none focus:ring-2 focus:ring-amber-300 rounded px-1">
+          Política de Privacidade
+        </button>
+        <span aria-hidden="true">•</span>
+        <button type="button" onclick="openInfoModal('teclado')" class="underline-offset-2 transition hover:text-white hover:underline focus:outline-none focus:ring-2 focus:ring-amber-300 rounded px-1">
+          Navegação por Teclado
+        </button>
+        <span aria-hidden="true">•</span>
+        <button type="button" onclick="openInfoModal('termos')" class="underline-offset-2 transition hover:text-white hover:underline focus:outline-none focus:ring-2 focus:ring-amber-300 rounded px-1">
+          Termos de Serviço
+        </button>
+      </nav>
+
+      <p class="mt-3 text-[10px] tracking-wider text-pinkSoft/70">
+        2026@vynx7
+      </p>
+    </div>
+  </footer>
+
+  <!-- Modal para Política de Privacidade, Termos de Serviço e Navegação por Teclado -->
+  <div id="info-modal" role="dialog" aria-modal="true" aria-labelledby="info-modal-title" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/60 p-4 backdrop-blur-xs">
+    <div class="relative max-h-[85vh] w-full max-w-lg overflow-y-auto rounded-3xl border-2 border-pinkBorder bg-white p-6 text-choco shadow-xl">
+      <div class="flex items-center justify-between border-b border-pinkBorder/30 pb-3">
+        <h2 id="info-modal-title" class="font-script text-2xl font-bold text-crimson"></h2>
+        <button id="close-info-modal" type="button" onclick="closeInfoModal()" aria-label="Fechar janela" class="rounded-full bg-pinkBg px-3 py-1 text-xs font-bold text-crimson transition hover:bg-crimson hover:text-white focus:outline-none focus:ring-2 focus:ring-crimson">
+          Fechar (Esc)
+        </button>
+      </div>
+      <div id="info-modal-content" class="mt-4 space-y-3 text-sm leading-relaxed text-choco"></div>
+    </div>
+  </div>
+
+  <script>
+    const INFO_DOCS = {
+      privacidade: {
+        title: 'Política de Privacidade',
+        body: `
+          <p><strong>1. Coleta de Dados:</strong> Este site funciona exclusivamente como catálogo digital informativo da <strong>Doçuras da Jane</strong>. Não coletamos, armazenamos ou vendemos dados pessoais automaticamente durante a navegação.</p>
+          <p><strong>2. Contato via WhatsApp e Instagram:</strong> Ao clicar nos botões de contato, você será redirecionado para os aplicativos externos (WhatsApp ou Instagram), onde as informações fornecidas por você (nome, endereço de entrega e detalhes do pedido) são usadas apenas para atendimento e produção da encomenda.</p>
+          <p><strong>3. Segurança:</strong> Nenhuma informação financeira ou de cartão é solicitada diretamente nesta página.</p>
+        `
+      },
+      teclado: {
+        title: 'Navegação por Teclado',
+        body: `
+          <p>Este site foi estruturado para oferecer acesso completo utilizando apenas o teclado:</p>
+          <ul class="list-disc space-y-1.5 pl-5">
+            <li><strong>Tab:</strong> Avança entre os botões de contato, categorias do cardápio e links do rodapé.</li>
+            <li><strong>Shift + Tab:</strong> Retorna para o elemento interativo anterior.</li>
+            <li><strong>Enter ou Espaço:</strong> Ativa links, abre categorias ou exibe os documentos informativos.</li>
+            <li><strong>Setas (↑ / ↓) ou Page Up / Page Down:</strong> Rola suavemente pelas tabelas de bolos, kits e doces.</li>
+            <li><strong>Esc:</strong> Fecha janelas abertas e retorna o foco ao botão anterior.</li>
+          </ul>
+        `
+      },
+      termos: {
+        title: 'Termos de Serviço',
+        body: `
+          <p><strong>1. Encomendas e Prazos:</strong> Todos os bolos, doces, trufas e kits festa são produzidos sob encomenda. A disponibilidade de datas deve ser confirmada diretamente pelo WhatsApp <strong>(82) 99949-6405</strong>.</p>
+          <p><strong>2. Itens Inclusos e Adicionais:</strong> Toppers personalizados em 3D, flores e glitter não estão inclusos nos valores base das tabelas e seguem as regras descritas em cada seção.</p>
+          <p><strong>3. Pagamento:</strong> Aceitamos pagamento à vista, Pix e parcelamento no cartão de crédito (ou 50% de sinal e restante na entrega para Kit Festa, conforme tabela).</p>
+        `
+      }
+    };
+
+    let lastFocusedElement = null;
+
+    function openInfoModal(key) {
+      const modal = document.getElementById('info-modal');
+      const titleEl = document.getElementById('info-modal-title');
+      const contentEl = document.getElementById('info-modal-content');
+      const doc = INFO_DOCS[key];
+      if (!doc || !modal) return;
+
+      lastFocusedElement = document.activeElement;
+      titleEl.textContent = doc.title;
+      contentEl.innerHTML = doc.body;
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+      document.getElementById('close-info-modal').focus();
+    }
+
+    function closeInfoModal() {
+      const modal = document.getElementById('info-modal');
+      if (!modal) return;
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+      if (lastFocusedElement) lastFocusedElement.focus();
+    }
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        const modal = document.getElementById('info-modal');
+        if (modal && !modal.classList.contains('hidden')) {
+          closeInfoModal();
+        }
+      }
+    });
+
+    document.getElementById('info-modal').addEventListener('click', (e) => {
+      if (e.target.id === 'info-modal') closeInfoModal();
+    });
+  </script>
+
+</body>
+</html>
